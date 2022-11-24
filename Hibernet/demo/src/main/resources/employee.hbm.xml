@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping Public
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+<hibernate-mapping>
+    <class name="Hibernatefirst.demo" table = "employee">
+        <id name="Emp_id" type="int" column="Emp_id">
+            <generator class="native"></generator>
+        </id>
+        <property name="Name"  column ="name" type ="String"/>
+        <property name="salary" column ="salary" type ="Double" />
+        <property name="location" column ="location" type ="String" />
+    </class>
+
+</hibernate-mapping>
